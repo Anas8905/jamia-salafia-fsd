@@ -18,6 +18,10 @@
 }
 
 .font-arabic {
-	@apply text-xl;
+	@apply text-2xl;
 	font-family: 'Noto Naskh Arabic', serif;
+}
+
+.hover-translate {
+	@apply transition duration-300 ease-in-out transform hover:-translate-y-1
 }
