@@ -434,44 +434,53 @@
 		</section>
 
 		<!-- Footer Section -->
-		<footer class="bg-gray-800 text-white py-12">
-			<div class="container mx-auto">
+		<footer class="font-sans bg-gray-500 text-white pt-12 pb-8">
+			<div class="px-6 mx-6 lg:px-20">
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
 					<!-- Contact Info -->
-					<div class="contact-info">
+					<div>
 						<h3 class="text-xl font-bold mb-4">Contact Us</h3>
-						<p><i class="fas fa-map-marker-alt"></i> 123 University St, City, Country</p>
-						<p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
-						<p><i class="fas fa-envelope"></i> info@example.com</p>
+						<p class="text-sm">F434+8VH, Ashrafabad, Faisalabad, Punjab</p>
+						<p class="text-sm">+92 3167038276</p>
+						<p class="text-sm">anasameen82@gmail.com</p>
 					</div>
+
 					<!-- Quick Links -->
 					<div class="quick-links">
 						<h3 class="text-xl font-bold mb-4">Quick Links</h3>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="#">Admissions</a></li>
-							<li><a href="#">Contact</a></li>
+						<ul class="space-y-2">
+							<li><router-link class="font-arabic hover:text-blue-400 transition-colors text-lg" :to="'/alumni'"> {{ $t('alumni') }} </router-link></li>
+							<li><router-link class="font-arabic hover:text-blue-400 transition-colors text-lg" :to="'/fatwaheading'"> {{ $t('fatwaheading') }} </router-link></li>
+							<li><router-link class="font-arabic hover:text-blue-400 transition-colors text-lg" :to="'/research'"> {{ $t('research') }} </router-link></li>
 						</ul>
 					</div>
+
 					<!-- Social Media -->
 					<div class="social-media">
 						<h3 class="text-xl font-bold mb-4">Connect With Us</h3>
-						<div class="flex items-center space-x-4">
-							<a href="#" class="text-2xl"></a>
-							<a href="#" class="text-2xl"></a>
-							<a href="#" class="text-2xl"></a>
-							<a href="#" class="text-2xl"></a>
+						<div class="flex items-center justify-center">
+							<a href="#" class="text-2xl mr-2">
+								<img src="../../public/img/svg/facebook-svgrepo-com.svg" alt="facebook" class="h-10 w-10"/>
+							</a>
+							<a href="#" class="text-2xl mr-2">
+								<img src="../../public/img/svg/youtube-svgrepo-com.svg" alt="youtube" class="h-10 w-10"/>
+							</a>
+							<a href="#" class="text-2xl">
+								<img src="../../public/img/svg/whatsapp-svgrepo-com.svg" alt="youtube" class="h-10 w-10"/>
+							</a>
 						</div>
 					</div>
 				</div>
-				<!-- Copyright -->
-				<div class="text-center mt-8">
-					<p>&copy; 2024 University Name. All rights reserved.</p>
+
+				<!-- Divider -->
+				<div class="border-t border-gray-700 mt-8"></div>
+				<div class="text-center mt-8 text-sm">
+					<p class="mb-0">&copy; 2024 Jamia Salafia. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>
+
 	</div>
 </template>
 
