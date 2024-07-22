@@ -18,7 +18,6 @@
 }
 
 .font-arabic {
-	@apply text-2xl;
 	font-family: 'Noto Naskh Arabic', serif;
 }
 
